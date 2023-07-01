@@ -1,0 +1,32 @@
+<%- include('./partials/header.ejs', { title: 'Contact Me' }) %>
+
+<main class="contact">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="mb-4">Let's Connect!</h1>
+        <p class="mb-4">I'm always happy to make new connections and face new challenges. Feel free to say hi, or send a message directly to <a href="mailto:ylou3@my.centennialcollege.ca">my email</a>.</p>
+        
+        <form id="contact-form" action="mailto:ylou3@my.centennialcollege.ca" method="post">
+          <h3 class="mb-3">Quick Contact</h3>
+          <h4 class="mb-3">Send me a message</h4>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your name" tabindex="1" required autofocus>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your e-mail address" tabindex="2" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-control" placeholder="Your phone number" tabindex="3" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Type your message here..." rows="3" tabindex="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" tabindex="5">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%- include('./partials/footer.ejs') %>
